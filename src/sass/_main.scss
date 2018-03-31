@@ -1,0 +1,717 @@
+/* ---------------TOP BANNER START-------------- */
+
+.top-banner {
+	@include flex;
+	height: 1677px;
+	flex-wrap: wrap;
+	position: relative;
+	padding-top: 155px; 
+	align-content: flex-start; 
+	font-family: $abraham;
+	justify-content: center;
+	background: url($top-banner_background-url) no-repeat center;
+	color: $white;
+
+	&_introduction {
+
+		flex-basis: 85%;
+		margin-top: 297px;
+		text-align: center;
+		align-self: flex-end;
+
+		&-title {
+
+			margin-bottom: 1.3%;
+			font-size: 6em;
+			color: $top-banner_introduction-title-color;
+			line-height: 1.226;
+			letter-spacing: 1px;
+			font-weight: 400;
+		}
+
+		&-text {
+
+			font-size: em(40px);
+			line-height: 1.25;
+			letter-spacing: 8px;
+			text-transform: uppercase;
+		}
+	}
+
+	&_button-wrap {
+
+		@include flex;
+		flex-basis: 40%;
+		height:185px; 
+		margin-top:15.5em;
+		flex-wrap: wrap;
+		justify-content: center;
+		overflow: hidden;
+	}
+
+	&_button {
+		width: 64px;
+		height:65px;
+		background: rgba(0,0,0,0); 
+		border:1px solid $white;
+		border-bottom:none;
+	}
+
+	&_button-sign {
+		flex-basis: 100%;
+		text-transform: uppercase;
+		color: $white;
+		text-align: center;
+		font-size: 1.6em;
+		letter-spacing:5px;
+	}
+
+	&_arrow {
+		margin-top:60px; 
+	}
+
+	.contacts {
+
+		width: 1325px;
+		@include flex-pack(space-between, null, null, null);
+		@include font-abraham(15px);
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+		position: absolute;
+		bottom:730px;
+		right:-615px;
+		color:$white;
+		line-height: 2.313; 
+		letter-spacing: 5px;
+
+
+/* 		@include r(1268){
+
+	width: 100%;
+	right: -47%;
+}
+ */
+		&_copyright {
+
+			@include flex-pack(null, center, null, 51%);
+		}
+
+		&_list {
+		
+			@include flex-pack(space-between, center, null, 39%);
+			@include r(1268){
+
+				flex-basis: 41%;
+			}
+	
+			&-item {
+		
+				flex-basis:17%;
+				/* overflow: hidden; */
+				text-align: center;	
+			}
+		
+			&-href {
+				color: $white;
+				letter-spacing:5px; 
+			}
+		}
+
+		&_call {
+			@include flex;
+			margin-left: auto;
+
+			&-emblem{
+				width: 100%;
+				height: auto;
+				-webkit-transform: rotate(90deg);
+				-moz-transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+				-o-transform: rotate(90deg);
+				transform: rotate(90deg);
+			}
+		}
+	}
+
+}
+/* ---------------TOP BANNER END-------------- */
+
+/* ---------------WHAT WE DO START-------------- */
+
+.main-content{
+
+	@include flex-pack(center, null, wrap, 100%);
+
+	background: url($main-content_background-url) no-repeat 50% 100%;
+
+	.honor-for-details {
+
+		@include flex-pack(flex-end, flex-end, null, 70%);
+		@include font-abraham($base-size);
+
+		position: relative; 
+		justify-content: flex-end;
+		max-height: 335px;
+		padding-top: 72px;
+		margin-bottom: 23.8em;
+
+		&_number {
+
+		flex-basis: 20.5%;
+		order: 3;
+		margin-left: 3.5%;
+		text-align: center;
+ 
+			&-text {
+
+				font-size: em(353px);
+				line-height:76%; 
+				color: black;
+			}
+		}
+
+		&_titles-container {
+
+			@include flex-pack(flex-end,flex-end,wrap,52%);
+			align-content:flex-end; 
+			order: 2;
+			height:700px; 
+			padding: 0 30px 30px 0;
+			border: 20px solid black;
+			color: #000;
+		}
+
+		&_title {
+
+			@include font ($abraham, null, 0.9, $abrahead-size);
+
+			flex-basis: 100%;			
+			text-align: right;
+			margin-bottom: 1.5%;
+		}
+
+		&_title-sub {
+
+			font-size: em(30px);
+			line-height: 1;
+			margin-left: 0.2%;
+		}
+
+		&_pen-box {
+
+			position: absolute;
+			top: 11%;
+			left: 2%; 
+		}
+	}
+
+	.what-we-do {
+
+		@include flex-pack(null, null, null, 90%);
+
+		background: rgba(0, 0, 0, 0);
+		margin-bottom:57.7em; 
+
+		&_slider-block {
+
+			flex-basis: 71%;
+			position: relative;
+			
+		}
+
+		&_slider-frame {
+
+			width: 57.6%;
+			height: 702px;
+			border: 21px solid black;
+		}
+
+		&_slider-container {
+
+			width: 71.5%;
+			position: absolute;
+			bottom:9%;
+			left:6%;
+		}
+
+		.slider-nav {
+	
+			@include flex-pack (space-between, center, null, null);
+			@include font ($abraham, 5px, 1.321, 29px, 400);
+
+			width: 28.7%;
+			position: absolute;
+			top: 8%;
+			left: 7.3%;
+			z-index:40;
+
+			&_prev-button {
+
+				@include flex-pack(space-between, center, null, 40%);
+
+				cursor: pointer;
+			}
+
+			&_prev-img {
+
+				transform: rotate(180deg);
+			}
+
+			&_next-button {
+
+				@include flex-pack(space-between, center, null, 40%);
+
+				cursor: pointer;
+			}
+
+			&_next-text {
+
+				order:-1;
+			}
+			
+		}
+
+		&_title-container {
+
+			width: 50%;
+			position: absolute;
+			top: 29.5%;
+			left: 46.6%;
+			padding: 38px 45px 40px;
+			background: $violet;
+
+		}
+
+		&_title {
+
+			@include font($abraham, null, 1.286, 70px, 400);
+
+			color: $orange;
+
+			&-text {
+
+				@include font($poppins, null, 2.222, 18px, 400);
+
+				color: white;
+			}
+		}
+
+		&_close-button {
+
+			position: absolute;
+			top: 12%;
+			right: 5.5%;
+			cursor: pointer;
+		}
+
+		&_number {
+
+			@include font ($abraham, null, 0.254, 350px, null);
+	
+			position: absolute;
+			bottom: -1%;
+			right: -3%;			
+		}
+
+		.services {
+
+			@include flex-pack(center, center, null, 29%);
+
+			&_list {
+
+				@include flex-pack (center, center, wrap, 100%);
+				@include font ($abraham, null, 4, 30px, 400);
+
+				/* font-size: 2vw; */
+
+				&-href {
+
+					color:#000;
+				}
+
+				&-item {
+
+					@include flex-pack(null, center, null, 50%);
+
+					text-transform: uppercase;
+
+					&:nth-child(even){
+
+						justify-content: flex-end;
+					
+						& a{
+
+							flex-basis:80% 
+						}	
+
+					} 
+				}
+
+				.bordered {
+
+					border-top: 2px solid $gray_hr;
+					border-bottom: 2px solid $gray_hr;
+				}
+
+				&-href {
+
+					@include flex-pack (null, center, null, 100%);
+
+
+				}
+
+				&-img {
+
+					margin-left: 10px;
+					margin-right: 15px;
+				}
+	
+			}
+		}
+
+	}
+
+	.global-company {
+	
+		@include flex-pack(center, center, wrap, 65%);
+
+		margin-bottom: 14.7em;
+
+		&_header {
+
+			flex-basis: 100%;
+			text-align: center;
+			text-transform: uppercase;		
+		}
+
+		&_title {
+
+			@include font($abraham, null, 0.7, 100px, 400);
+
+			margin-bottom: 0.45em;	
+		}
+
+		&_sub {
+
+			@include font($abraham, 8px, 1.25, 40px, 400);
+
+
+		}
+
+		&_vertical-line {
+
+			width: 100px;
+			height: 1px;
+			margin: 7.3em 0 6.6em 0;
+			transform:rotate(90deg);
+			background:black;
+		}
+
+		.customers {
+
+			@include flex-pack (center, center, wrap, 100%);
+
+			&_title {
+
+				@include font ($poppins, null, 2.083, 24px, 400);
+
+				margin-bottom: 2.2em;
+			}
+
+			&_review-list {
+
+				@include flex-pack (space-between, null, null, 95%);
+
+				.shadowed {
+
+					box-shadow: $review-block-shadows;
+				}
+			}
+
+			.violet {
+
+				background: $violet;
+				color: white;
+			}
+
+			.orange {
+
+				color: $orange;
+			}
+
+			&_item {
+
+				@include flex-pack (center, null, wrap, 31.5%);
+
+				height: 520px;
+				background: white;
+
+				&-photo {
+
+					width: 140px;
+					height: 140px;
+					border-radius: 50%;
+					margin-top: 20px;
+				}
+
+
+				&_rate-wrapper {
+
+					flex-basis: 100%;
+					text-align: center;
+					align-self: flex-end;
+				}
+
+				&-blockquote {
+
+					@include font ($georgia, null, 1.667, 18px);
+					height: 50%;
+					align-self: flex-end;
+					position: relative;
+					margin: 0;
+					text-align: center;
+
+					&-footer {
+
+						position: absolute;
+						bottom: 15%;
+						left: 50%;
+						transform: translateX(-50%);
+						text-transform: uppercase;
+					}
+				}
+
+				&-text {
+
+					width: 90%;
+					max-height: 50%;
+					margin: 0 auto 1.5em;
+				}
+
+				&-location {
+
+					font-size: em(10px);
+
+				}
+
+			}
+		}
+	}
+}
+
+
+/* ---------------WHAT WE DO END-------------- */
+
+/* ---------------CLIENTS END-------------- */
+
+.clients {
+	
+	height:1470px;
+	text-align: center;
+	position: relative;
+
+	&_back-title {
+
+		@include font($abraham, null, 0.78, 435px, 500);
+
+		color: $clients_back-header-color;
+		text-transform: uppercase;
+		text-align: center;
+		position: absolute;
+		top: 12%;
+		left: 4.5%;
+		z-index: 15;
+	}
+
+	&_header{
+
+		width: 50%;
+		position: absolute;
+		top: 18.5%;
+		left: 49%;
+		transform: translate(-50%,0);
+		z-index: 20;
+		text-align: center;
+		
+		&-title {
+
+			@include font($abraham, null, 0.78, 100px, 400);
+
+			margin-bottom:2.5%; 
+		}
+
+		&-text {
+
+			@include font($poppins, null, 1.8, 22px, null);
+		}
+	}
+
+	.video-wrapper {
+
+		width: 100%;
+		height: 100%;
+		position: relative;
+			
+			.video_button-icon {
+
+				position: absolute;
+				top:45%;
+				left:50%;
+				transform: translate(-50%,-51%);
+				z-index: 25;
+			}
+		
+
+		#clients_video{
+
+			width: 100%;
+			height: 100%;
+			object-fit: initial;
+			z-index: 10;
+		}
+	}
+	  
+}
+
+/* ---------------INVITE START-------------- */
+
+
+.invite {
+
+	@include flex-pack(center, null, wrap, 100%);
+	background:$invite_bg;
+	color:$white;
+	padding-bottom:65px;
+
+	
+	&_header {	
+		@include flex-pack(null, flex-end, null, 63%);
+		@include font-abraham($base-size);
+		position: relative;
+		padding-top:85px;
+		max-height: 353px;  
+	}
+
+	&_number {
+
+			flex-basis: 20.5%;
+			text-align: center;
+		
+		&-text {
+			
+			font-size:em(353px);
+			line-height:76%; 
+			color: $invite_number-color;
+		}
+	}
+
+	&_titles-container {
+
+		@include flex-pack(null, flex-end, wrap, 58.4%);
+
+		align-content:flex-end; 
+		height:700px; 
+		border:20px solid $white;
+		padding:0 0 37px 39px;
+	}
+
+	&_title-attention {
+
+		font-size: em($abrahead-size);
+		font-family: $abraham;
+		line-height: 90%;
+		font-weight: 400;
+		margin-bottom: 2%; 	
+	}
+
+	&_title-sub {
+		
+		font-size: em(30px);
+		line-height: 1;
+		margin-left: 0.2%;
+	}
+
+	&_brush {
+		position: absolute;
+		top:-6%;
+		left:49%;
+	}
+
+	&_complexity {
+		@include flex-pack(space-between, center, null, 62%);
+		margin: 12em 0 6em;
+
+		&-title {
+
+			font-size: em($abrahead-size);
+			font-family: $abraham;
+			line-height: 86.5%;
+			font-weight: 400; 			
+		}
+
+		&-text{
+			flex-basis:63%;
+			margin-top:1%;
+			line-height:2.1;
+			font-family: $poppins;
+			font-size: em(19px);
+			font-weight:400;
+		}
+
+	}
+
+	&_slider {
+
+		width: 60%; 
+
+		&-item {
+
+			@include flex-pack(null, null, wrap, null);
+			align-content: center;
+			margin:0 16px;
+		}
+
+		&-img{
+
+			width: 12%;
+			align-self: baseline;
+		}
+
+		&-title {
+
+			margin: 4% 0 4.5%;
+			color:$invite_slider-title; 
+			font-family: $abraham;
+			font-size: em(30px);
+			font-weight: 400;		
+		}
+
+		.centered {
+
+				margin-top: 4.5%;
+			}	
+
+		&-hr {
+
+			width: 6%;
+			min-width: 50px;
+			text-align: left;
+			margin: 0 0 7.8%;
+		}
+
+		&-text {
+
+			font-family: $poppins;
+			line-height: 1.8; 
+		}
+	}
+}
+/* ---------------INVITE END-------------- */
+
+.global-company {
+	
+	@include flex-pack(center, center, wrap, 65%);
+}

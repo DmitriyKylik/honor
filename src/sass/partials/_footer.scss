@@ -1,0 +1,212 @@
+.footer {
+	
+	@include flex-pack (center, flex-start, wrap, 100%);
+	background: #212121; 
+	color:white;
+
+	&_top-line {
+
+		@include flex-pack (space-between,center, null, 62%);
+
+		margin: 1.8em 0 4em;
+	}
+
+	&_contact {
+
+		@include flex-pack (center, center, null, 21%);
+
+		&-number {
+
+			@include font ($roboto, 3px, 3.8, 13px, 400);
+
+			text-transform: uppercase;
+			color:white;
+
+			margin-left: 10px;
+		}
+	}
+
+	.footer_logo {
+
+		margin: 0;
+	}
+
+	&_mail {
+		
+		@include font ($roboto, 3px, 3.846, 13px);
+	
+		flex-basis: 23%;
+		text-transform: uppercase;
+		color: white;
+
+		&-img {
+
+			margin-right: 8px;
+		}
+
+		&-text {
+
+			color: $violet;
+		}
+	}
+	
+	&_main-content {
+
+
+		@include flex-pack (null, null, wrap, 66%);
+
+		padding-left: 2.4em;
+
+	}
+
+	.about-us {
+
+		flex-basis: 49.5%;
+
+		&_title {
+			
+			@include font ($roboto, 3px, 1.5, 14px, 600);
+
+			margin-bottom: 1.7em;
+			text-transform: uppercase;
+
+		}
+
+		&_description {
+
+			@include font ($roboto, null, 2.5, 12px);
+
+			display: inline-block;
+			float: right;
+			width: 60%;
+			margin: 0 37px 0 25px;
+		}
+
+		&_list {
+
+			width: 60%;
+			float: right;
+			margin-right: 5.8%;
+
+			&:after {
+
+				content:'';
+				display: table;
+				clear: both;
+			}
+
+			&-item {
+
+				float: left;
+				margin-right: 15px;
+				cursor: pointer;
+			}
+		}
+
+	}
+
+	.newsLetter {
+
+		flex-basis: 24.5%;
+
+		&_title {
+
+			@include font ($roboto, 3px, 1.9, 14px, bold);
+
+			margin-bottom: 13%;
+			text-transform: uppercase;
+		}
+
+		&_text {
+
+			@include font ($roboto, 3px, 1.75, 12px);
+
+			margin-bottom: 2%;
+		}
+
+		&_form {
+
+			width: 100%;
+			margin-top: 7%; 
+
+			#newsLetter_form-email {
+
+				display: block;
+				width: 85%;
+				padding: 10px 0 10px 13px;
+				margin-bottom: 5%;
+				color:white;
+				background-color: rgba(110, 110, 110, 0);
+				border: 1px solid rgb(69, 69, 69);
+
+				&::placeholder {
+
+					@include font ($roboto, 2.5px, 4.167, 12px);	
+
+					color:white;
+				}
+
+			}
+
+			#newsLetter_form-submit {
+
+				@include font ($roboto, 3px, 1.5, 14px, 400);
+
+				width: 129px;
+  				height: 40px;
+				background: $violet;
+				color: white;
+				border: none;		
+
+			}
+		}
+	}
+
+	.blog {
+
+		flex-basis: 25.5%;
+
+		&_title {
+
+			@include font ($roboto, 3px, 1.5, 14px, 400);
+
+			margin-bottom: 46px;
+
+			font-weight: bold;
+			text-transform: uppercase;
+
+		}
+
+		&_item {
+
+			display: block;
+			width: 100%;
+			max-height: 30%;
+			margin-bottom: 10px;
+			position: relative;
+		}
+
+		&_comment {
+
+			display: inline-block;
+			position: absolute;
+			top: -8%;
+			left: 27%;
+
+			&-text {
+				
+				@include font ('FontAwesome', null, 2, 12px);
+			}
+
+			&-date {
+
+				@include font ($myriad, 2px, 1.5, 12px);
+			
+				color: $violet;
+				
+				margin-left: 10px;
+			}
+		}
+	}
+}
+

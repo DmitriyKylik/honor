@@ -1,0 +1,10 @@
+@include font-face('Gotham',$gotham-font-path);
+@include font-face('AbrahamLincoln',$abraham-font-path);
+@include font-face('Poppins',$poppins-font-path);
+@include font-face('Georgia', $georgia-font-path);
+@include font-face ('Robobto', $roboto-font-path);
+
+body {
+
+  background: #FFF;
+}

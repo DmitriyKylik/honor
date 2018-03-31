@@ -1,0 +1,42 @@
+.header{
+
+	@include flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-basis: 100%;
+	color:white;
+
+	&_nav{
+		@include flex;
+		justify-content: center;
+		flex-basis: 100%;
+		color: $white;
+
+		&_list{
+			@include flex;
+			justify-content: space-between;
+			flex-basis:45%;
+			font-size:em(20px); 
+
+			&-href{
+				color:$white;
+				letter-spacing: 6px;
+				line-height: 1.2;
+			}
+		}
+	}
+}
+
+.logo{
+	@include flex-pack(center, center, null, 15%);
+	margin:0 0 3.7em;
+	font-family:$gotham;
+
+	&_text{
+
+		@include font(null, 3px, 0.933, 34px, null);
+		padding:7px 10px;
+		border:3px solid white;
+		color:$white;
+	}
+}
