@@ -11,6 +11,17 @@ $(function() {
     rows:0,
     arrows:false,
     dots:true,
+    responsive: [
+      {
+        breakpoint: 1269,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }
+    ]
   });
 
   $('.what-we-do_slider').slick({

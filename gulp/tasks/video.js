@@ -8,5 +8,5 @@ gulp.task('video', function() {
 });
 
 gulp.task('video:watch', function(){
-		gulp.watch(config.src.video + '/*.{ogg,mp4}');
+		gulp.watch(config.src.video + '/*.{ogg,mp4}', ['video']);
 });
