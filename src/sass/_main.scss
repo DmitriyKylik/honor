@@ -2,6 +2,7 @@
 
 	max-width: 1920px;
 	min-width: 1248px;
+	flex: 1 0 auto;
 	position: relative;
 	background: #fff;
 	z-index: 200;
@@ -105,8 +106,8 @@
 		&_list {
 		
 			@include flex-pack(space-between, center, null, 39%);
-			@include r(1268){
 
+			@include r(1268){
 				flex-basis: 41%;
 			}
 	
@@ -161,8 +162,8 @@
 		padding-top: 72px;
 		margin-bottom: 23.8em;
 
-		@include r(1375){
 
+		@include r(1375){
 			flex-basis: 87%;
 		}
 
@@ -179,8 +180,8 @@
 				line-height:76%; 
 				color: black;
 
-				@include r(1269){
 		
+				@include r(1269){
 					font-size: em(200px);
 				}
 			}
@@ -196,8 +197,8 @@
 			border: 20px solid black;
 			color: #000;
 
-			@include r(1269){
 				
+			@include r(1269){
 				height: 400px;
 			}
 		}
@@ -210,8 +211,8 @@
 			text-align: right;
 			margin-bottom: 1.5%;
 
-			@include r(1269){
 				
+			@include r(1269){
 				font-size: em(80px);
 			}
 		}
@@ -222,8 +223,8 @@
 			line-height: 1;
 			margin-left: 0.2%;
 
-			@include r(1269){
 				
+			@include r(1269){
 				font-size: em(26px);
 			}
 		}
@@ -234,16 +235,16 @@
 			top: 11%;
 			left: 2%;
 
-			@include r(1600){
 		
+			@include r(1600){
 				width: 70%;
 				position: absolute;
 				top: 20%;
 				left: -10%;
 			}
 
-			@include r(1269){
 		
+			@include r(1269){
 				width: 65%;
 				position: absolute;
 				top: 20%;
@@ -278,8 +279,8 @@
 			height: 702px;
 			border: 21px solid black;
 
-			@include r(1269){
 				
+			@include r(1269){
 				height: 500px;
 			}
 		}
@@ -291,8 +292,8 @@
 			bottom:9%;
 			left:6%;
 
-			@include r(1269){
 				
+			@include r(1269){
 				width: 66.5%;
 				bottom:14%;
 				left:6%;
@@ -316,14 +317,14 @@
 			left: 7.3%;
 			z-index:40;
 
-			@include r(1675){
 				
+			@include r(1675){
 					width: 36%;
 					font-size: em(20px);
 				}
 
-			@include r(1269){
 				
+			@include r(1269){
 				width:35%;
 				font-size: em(16px);
 			}
@@ -336,8 +337,8 @@
 
 
 
-				@include r(1269){
 				
+				@include r(1269){
 					flex-basis:45%; 
 				}
 			}
@@ -353,8 +354,8 @@
 
 				cursor: pointer;
 
-				@include r(1269){
 				
+				@include r(1269){
 					flex-basis:45%; 
 				}
 			}
@@ -375,8 +376,8 @@
 			padding: 38px 45px 40px;
 			background: $violet;
 
-			@include r(1269){
 				
+			@include r(1269){
 				top: 25%;
 			}
 
@@ -388,8 +389,8 @@
 
 			color: $orange;
 
-			@include r(1269){
 				
+			@include r(1269){
 				font-size: em(40px);
 			}
 
@@ -399,8 +400,8 @@
 
 				color: white;
 
-				@include r(1269){
 				
+				@include r(1269){
 					font-size: em(14px); 
 				}
 			}
@@ -422,8 +423,8 @@
 			bottom: -1%;
 			right: -3%;
 
-			@include r(1269){
 	
+			@include r(1269){
 				bottom: 0%;
 				right: 3%;
 				font-size: em(200px);
@@ -439,8 +440,8 @@
 				@include flex-pack (center, center, wrap, 100%);
 				@include font ($abraham, null, 4, 30px, 400);
 
-				@include r(1269){
 
+				@include r(1269){
 					font-size: em(16px);
 				}	
 
@@ -465,24 +466,24 @@
 
 						flex-basis:100%; 
 
-						@include r(1692){
 
+						@include r(1692){
 							font-size: em(14px);
 						}
 
-						@include r(1508){
 
+						@include r(1508){
 							font-size: em(12px);
 						}
 
-						@include r(1372){
 
+						@include r(1372){
 							font-size: em(10px);
 						}
 
 
-						@include r(1269){
 
+						@include r(1269){
 							font-size: em(18px);
 						}
 					}	
@@ -527,8 +528,8 @@
 
 			margin-bottom: 0.45em;
 
-			@include r(1269){
 		
+			@include r(1269){
 					font-size: em(70px);
 				}
 		}
@@ -537,8 +538,8 @@
 
 			@include font($abraham, 8px, 1.25, 40px, 400);
 
-			@include r(1269){
 		
+			@include r(1269){
 				font-size: em(30px);
 			}
 		}
@@ -591,8 +592,8 @@
 				height: 520px;
 				background: white;
 
-				@include r(1269){
 			
+				@include r(1269){
 					height: 450px;
 				}
 
@@ -637,13 +638,13 @@
 					max-height: 50%;
 					margin: 0 auto 1.5em;
 
-					@include r(1310){
 			
+					@include r(1310){
 						font-size: em(14px);
 					}
 
-					@include r(1269){
 			
+					@include r(1269){
 						font-size: em(12px);
 					}
 				}
@@ -652,8 +653,8 @@
 
 
 
-					@include r(1269){
 			
+					@include r(1269){
 						font-size: em(12px);
 					}
 				}
@@ -691,8 +692,8 @@
 		left: 4.5%;
 		z-index: 15;
 
-		@include r(1269){
 
+		@include r(1269){
 			top: 15%;	
 			left: 0;
 			font-size: em(320px);
@@ -715,8 +716,8 @@
 
 			margin-bottom:2.5%; 
 
-			@include r(1269){
 
+			@include r(1269){
 				font-size: em(80px);
 			}
 		}
@@ -725,8 +726,8 @@
 
 			@include font($poppins, null, 1.8, 22px, null);
 
-			@include r(1269){
 
+			@include r(1269){
 				font-size: em(18px);
 			}
 		}
@@ -746,8 +747,8 @@
 				transform: translate(-50%,-51%);
 				z-index: 25;
 
-				@include r(1269){
 
+				@include r(1269){
 					width: 250px;
 					height: 250px;
 				}
@@ -795,18 +796,18 @@
 			line-height:76%; 
 			color: $invite_number-color;
 
-			@include r(1710){
 
+			@include r(1710){
 				font-size: em(300px);
 			} 	
 
-			@include r(1427){
 
+			@include r(1427){
 				font-size: em(250px);
 			} 
 
-			@include r(1269){
 
+			@include r(1269){
 			font-size: em(200px);
 		} 		
 		}
@@ -821,14 +822,14 @@
 		border:20px solid $white;
 		padding:0 0 37px 39px;
 
-		@include r(1510){
 
+		@include r(1510){
 				padding: 0 0 20px 20px;
 				height: 500px;
 			} 	
 
-		@include r(1427){
 
+		@include r(1427){
 			height: 500px;
 		} 	
 	}
@@ -841,18 +842,18 @@
 		font-weight: 400;
 		margin-bottom: 2%;
 
-		@include r(1668){
 
+		@include r(1668){
 			font-size: em(80px);		
 		}
 
-		@include r(1427){
 
+		@include r(1427){
 			font-size: em(80px);
 		} 
 
-		@include r(1343){
 
+		@include r(1343){
 			font-size: em(60px);
 		} 	
 	}
@@ -863,39 +864,39 @@
 		line-height: 1;
 		margin-left: 0.2%;
 
-		@include r(1427){
 
+		@include r(1427){
 			font-size: em(26px);
 		}
 
-		@include r(1343){
 
+		@include r(1343){
 			font-size: em(20px);
 		} 	
 	}
 
 	&_brush {
-		width: 80%;
+		width: 75%;
 		position: absolute;
 		top:28px;
 		left:525px;
 		text-align: center;
 
-		@include r(1586){
 
+		@include r(1586){
 			width: 70%;
 			left: 500px;
 		}
 
-		@include r(1427){
 
+		@include r(1427){
 			width: 65%;
 			top:95px;
 			left: 456px;
 		}
 
-		@include r(1269){
 
+		@include r(1269){
 			top:115px;
 			left: 410px;
 		} 	
@@ -921,13 +922,13 @@
 			line-height: 86.5%;
 			font-weight: 400;
 
-			@include r(1427){
 
+			@include r(1427){
 				font-size: em(70px);
 			}
 
-			@include r(1269){
 
+			@include r(1269){
 				font-size: em(70px);
 			} 	 	 			
 		}
@@ -940,8 +941,8 @@
 			font-size: em(19px);
 			font-weight:400;
 
-			@include r(1269){
 
+			@include r(1269){
 				font-size: em(16px);
 			} 
 		}
