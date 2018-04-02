@@ -5,9 +5,12 @@
 @include font-face ('Robobto', $roboto-font-path);
 
 body {
-
-  background: #FFF;
-  padding-bottom: 432px; 
+	
+	@include flex();
+	
+	min-height: 100vh;
+    background: #FFF;
+    padding-bottom: 432px; 
 }
 
 

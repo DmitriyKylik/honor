@@ -1,6 +1,7 @@
 .footer {
 	
 	@include flex-pack (center, flex-start, wrap, 100%);
+	flex: none;
 	height: 432px;
 	position: fixed;
 	bottom: 0;
