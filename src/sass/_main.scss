@@ -680,7 +680,7 @@
 	text-align: center;
 	position: relative;
 
-	&_back-title {
+	&_backTitle {
 
 		@include font($abraham, null, 0.78, 435px, 500);
 
@@ -745,6 +745,7 @@
 				top:45%;
 				left:50%;
 				transform: translate(-50%,-51%);
+				cursor: pointer;
 				z-index: 25;
 
 
