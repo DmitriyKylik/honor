@@ -2,6 +2,7 @@
 	
 	@include flex-pack (center, flex-start, wrap, 100%);
 	flex: none;
+	max-width: 1920px;
 	height: 432px;
 	position: fixed;
 	bottom: 0;
