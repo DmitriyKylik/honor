@@ -4,13 +4,24 @@
 @include font-face('Georgia', $georgia-font-path);
 @include font-face ('Robobto', $roboto-font-path);
 
+  // html {
+  //   height: 100%;
+  // }
+
 body {
 	
-	@include flex();
-	
+	display: flex;
+	flex-direction: column;
 	min-height: 100vh;
-    background: #FFF;
-    padding-bottom: 432px; 
+	background: #FFF;
+	padding-bottom: 432px;
+	overflow-x: hidden;
+
+	@include r(1268){
+		min-width: 1268px; 
+		overflow-x: scroll;
+		padding-bottom: 0;
+	}
 }
 
 

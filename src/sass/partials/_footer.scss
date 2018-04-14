@@ -1,14 +1,21 @@
 .footer {
-	
-	@include flex-pack (center, flex-start, wrap, 100%);
+
+	@include flex-pack (center, flex-start, wrap, none);
+	width: 100%;
 	flex: none;
 	max-width: 1920px;
+	min-width: 1268px;
 	height: 432px;
 	position: fixed;
+	left: 0;
 	bottom: 0;
 	background: #212121; 
 	color:white;
 	z-index: 50;
+	@include r(1268){
+		
+		position: static;
+	}
 
 	&_top-line {
 
@@ -17,12 +24,11 @@
 		margin: 1.8em 0 4em;
 
 		@include r(1705){
-					
+
 			flex-basis: 70%;
 		}
 
 		@include r(1605){
-					
 			flex-basis: 75%;
 		}
 		
@@ -31,8 +37,6 @@
 
 			flex-basis: 95%;
 		}
-
-	
 	}
 
 	&_contact {
@@ -40,7 +44,7 @@
 		@include flex-pack (false, center, null, 22%);
 
 		@include r(1800){
-					
+
 			flex-basis: 30%;
 		}
 
@@ -152,11 +156,12 @@
 		&_description {
 
 			@include font ($roboto, null, 2.5, 12px);
-
+			@include clr;
 			display: inline-block;
 			float: right;
 			width: 60%;
 			margin: 0 37px 0 25px;
+
 		}
 
 		&_list {
